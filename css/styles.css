@@ -76,18 +76,21 @@ HTML
     font-weight: 700;
   }
   nav ul a:hover {
-    background-color: transparent;
+    /*background-color: transparent;*/
   }
   nav.nav-extended .nav-content {
     min-height: 60px;
     height: auto;
+  }
+  #mobile-toc {
+    padding-left: 30px;
   }
   .dropdown-content {
     top: 50px !important;
     min-width: 250px;
   }
   .dropdown-content li>a, .dropdown-content li>span {
-    color: #607d8b    /* blue-grey */
+    color: #42a5f5;  /* blue lighten-1 */
   }
   .dropdown-content li:hover, .dropdown-content li.active {
     background-color: #fff;
@@ -102,15 +105,19 @@ HTML
   }
   .collection.with-header .collection-header {
     border-bottom: none;
+    background-color: transparent;
   }
   .collection .collection-item {
-      border-bottom: none;
+    border-bottom: none;
+    background-color: transparent;
   }
   .collection a.collection-item {
     font-weight: 700;
   }
   #table-of-contents {
     position: fixed;
+    overflow-y: auto;
+    height: calc(100% - 64px);
   }
   #table-of-contents .collection a.collection-item {
     color: #42a5f5;  /* blue lighten-1 */
@@ -158,4 +165,8 @@ HTML
   #related-articles .collection a.collection-item:not(.active):hover {
     background-color: #fff;
     color: #03a9f4 /* LIGHT-BLUE */
+  }
+  .col .row {
+    margin-left: auto;
+    margin-right: auto;
   }
