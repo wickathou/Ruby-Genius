@@ -32,7 +32,6 @@ HTML
     color: white;
     background: #282c34;  /* space-blue darken-4 */
   }
-
   code span.method {
     color: yellow;
   }
@@ -47,7 +46,9 @@ HTML
     padding: 0.1em 0.3em;
     background-color: #e0e0e0;  /* grey lighten-2 */
   }
-
+  .no-hover:hover {
+    background-color: none !important;
+  }
   .note {
     background-color: #eee;       /* grey lighten-3 */
     border: 1px solid #bdbdbd;    /* grey lighten-1 */
@@ -76,7 +77,10 @@ HTML
     font-weight: 700;
   }
   nav ul a:hover {
-    /*background-color: transparent;*/
+    background-color: rgba(0,0,0,0.1);
+  }
+  nav ul a.no-hover:hover {
+    background-color: none;
   }
   nav.nav-extended .nav-content {
     min-height: 60px;
@@ -99,6 +103,9 @@ HTML
     height: 60px;
     line-height: 60px;
     display: inline-flex;
+  }
+  .jump-bar i {
+    font-size: 1rem;
   }
   .collection {
     border: none;
