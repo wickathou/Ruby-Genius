@@ -334,28 +334,44 @@
 						numbers.<span class="method">push</span>(<span class="num">99</span>, <span class="num">101</span>, <span class="num">202</span>)  <span class="comment">#=> [ 1, 2, 3, 4, 5, 99, 101, 202 ]</span>
 					</code>
 
-					<h5 id="unshift">.unshift</h5>
-					<p>The <span class="code">.unshift</span> method takes an enumerable collection and returns a new collection, sorted.</p>
+					<h5 id="shift">.shift</h5>
+					<p>The <span class="code">.shift</span> method removes elements at the beginning of an array.</p>
 
-					<code><span class="comment"># sort an array of numbers</span>
-						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
-						numbers.<span class="method">unshift</span>  <span class="comment">#=> [-99, -3, 0, 2, 5]</span>
+					<code><span class="comment"># remove an element at the beginning of an array</span>
+						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
+						numbers.<span class="method">shift</span>(<span class="num">1</span>) <span class="comment">#=> 1</span>
+						<span class="comment">numbers #=> [ 2, 3, 4, 5 ]</span>
+
+						<span class="comment"># remove multiple elements at the beginning of an array</span>
+						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
+						numbers.<span class="method">shift</span>(<span class="num">3</span>) <span class="comment">#=> [ 1, 2, 3 ]</span>
+						<span class="comment">numbers #=> [ 4, 5 ]</span>
 					</code>
 
 					<h5 id="pop">.pop</h5>
-					<p>The <span class="code">.pop</span> method takes an enumerable collection and returns a new collection, sorted.</p>
+					<p>The <span class="code">.pop</span> method removes elements at the end of an array.</p>
 
-					<code><span class="comment"># sort an array of numbers</span>
-						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
-						numbers.<span class="method">pop</span>  <span class="comment">#=> [-99, -3, 0, 2, 5]</span>
+					<code><span class="comment"># remove an element at the end of an array</span>
+						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
+						numbers.<span class="method">pop</span>(<span class="num">1</span>) <span class="comment">#=> 5</span>
+						<span class="comment">numbers #=> [ 1, 2, 3, 4 ]</span>
+
+						<span class="comment"># remove multiple elements at the end of an array</span>
+						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
+						numbers.<span class="method">pop</span>(<span class="num">3</span>) <span class="comment">#=> [ 3, 4, 5 ]</span>
+						<span class="comment">numbers #=> [ 1, 2]</span>
 					</code>
 
 					<h5 id="insert">.insert</h5>
-					<p>The <span class="code">.insert</span> method takes an enumerable collection and returns a new collection, sorted.</p>
+					<p>The <span class="code">.insert</span> method inserts elements at a specified location in an array.</p>
 
-					<code><span class="comment"># sort an array of numbers</span>
-						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
-						numbers.<span class="method">insert</span>  <span class="comment">#=> [-99, -3, 0, 2, 5]</span>
+					<code><span class="comment"># insert a 99 at position 3 in an array</span>
+						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
+						numbers.<span class="method">insert</span>(<span class="num">3</span>, <span class="num">99</span>) <span class="comment">#=> [ 1, 2, 3, 99, 4, 5 ]</span>
+
+						<span class="comment"># insert multiple elements at position 3 in an array</span>
+							numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
+							numbers.<span class="method">insert</span>(<span class="num">3</span>, <span class="num">99</span>, <span class="num">101</span>, <span class="num">202</span>) <span class="comment">#=> [ 1, 2, 3, 99, 101, 202, 4, 5 ]</span>
 					</code>
 
 					<h5 id="delete_at">.delete_at</h5>
