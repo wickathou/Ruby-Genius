@@ -1,11 +1,11 @@
 # Project Name
-Ron's Ruby Docs
+Ruby Genius
 
 # Author
 Ronald Tingchaleun
 
-# Project Website
+# Website
 Coming soon
 
 # Project Description
-A simple syntax guide for Ruby
+A guide for the Ruby programming language.
