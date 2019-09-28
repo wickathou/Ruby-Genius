@@ -2,7 +2,7 @@
 <html >
 <head>
 
-	<title>Array Methods | Ruby Genius</title>
+	<title>How to Use Array Methods in Ruby | Ruby Genius</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700|Inconsolata|Raleway:400,700&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
 
 	<!--CS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link type="text/css" rel="stylesheet" href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/css/styles.css">
+	<link type="text/css" rel="stylesheet" href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/css/styles.css">
 
 	<!--JS-->
 	<script src="https://kit.fontawesome.com/1c06c50ef8.js"></script>
@@ -20,31 +20,31 @@
 <body onload="scrollSpy()" onscroll="scrollSpy()">
 	<!-- Dropdown - Epics -->
 	<ul id="dd-epic" class="dropdown-content">
-	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/ruby/arrays/arrays.html">Using Arrays in Ruby</a></li>
+	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/arrays.html">Ruby Arrays</a></li>
 	</ul>
 
 	<!-- Dropdown - Chapters -->
 	<ul id="dd-chapter" class="dropdown-content">
-	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/ruby/arrays/working-with-arrays.html">Working with Arrays</a></li>
-	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/ruby/arrays/array-methods.html">Array Methods</a></li>
+	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/working-with-arrays.html">Working with Arrays</a></li>
+	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/array-methods.html">How to Use Array Methods in Ruby</a></li>
 	</ul>
 
 	<nav class="nav-extended">
     <div class="nav-wrapper white">
-      <a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/index.html" class="brand-logo left">Ruby Genius</a>
+      <a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/index.html" class="brand-logo left">Ruby Genius</a>
 
 			<!-- Trigger - Mobile Nav Bar -->
       <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
 			<!-- Nav Bar - Desktop -->
 			<ul class="hide-on-med-and-down right">
-        <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/ruby/arrays.html">Ruby</a></li>
+        <li><a target="_blank" href="https://github.com/rtingchaleun/Ruby-Genius">GitHub</a></li>
       </ul>
     </div>
 
 		<!-- Nav Menu - Mobile -->
 		<ul class="sidenav" id="mobile-menu">
-	    <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/ruby/arrays.html">Ruby</a></li>
+	    <li><a target="_blank" href="https://github.com/rtingchaleun/Ruby-Genius">GitHub</a></li>
 	  </ul>
 
 		<!-- Secondary Nav Bar -->
@@ -52,7 +52,7 @@
 			<ul class="jump-bar">
         <li><a class="dropdown-trigger" href="#!" data-target="dd-epic">Ruby Arrays<i class="material-icons right">arrow_drop_down</i></a></li>
 				<li><i class="fas fa-chevron-right blue-grey-text darken-2"></i></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dd-chapter">Array Methods<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dd-chapter">How to Use Array Methods in Ruby<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </nav>
@@ -75,7 +75,6 @@
 	        <a href="#find_index" class="collection-item">.find_index</a>
 	        <a href="#find_all" class="collection-item">.find_all</a>
 	        <a href="#reject" class="collection-item">.reject</a>
-	        <a href="#slice" class="collection-item">.slice</a>
 
 					<div class="collection-header"><h6>Mutator Methods</h6></div>
 	        <a href="#sort" class="collection-item">.sort</a>
@@ -87,6 +86,7 @@
 	        <a href="#insert" class="collection-item">.insert</a>
 	        <a href="#delete" class="collection-item">.delete</a>
 	        <a href="#delete_at" class="collection-item">.delete_at</a>
+	        <a href="#slice" class="collection-item">.slice</a>
 
 					<div class="collection-header"><h6>Iterator Methods</h6></div>
 	        <a href="#each" class="collection-item">.each</a>
@@ -116,11 +116,18 @@
 				<li><a href="#find_index" class="collection-item">.find_index</a></li>
 				<li><a href="#find_all" class="collection-item">.find_all</a></li>
 				<li><a href="#reject" class="collection-item">.reject</a></li>
-				<li><a href="#slice" class="collection-item">.slice</a></li>
 
 				<div class="collection-header"><h6>Mutator Methods</h6></div>
 				<li><a href="#sort" class="collection-item">.sort</a></li>
 				<li><a href="#reverse" class="collection-item">.reverse</a></li>
+				<li><a href="#unshift" class="collection-item">.unshift</a></li>
+				<li><a href="#push" class="collection-item">.push</a></li>
+				<li><a href="#shift" class="collection-item">.shift</a></li>
+				<li><a href="#pop" class="collection-item">.pop</a></li>
+				<li><a href="#insert" class="collection-item">.insert</a></li>
+				<li><a href="#delete" class="collection-item">.delete</a></li>
+				<li><a href="#delete_at" class="collection-item">.delete_at</a></li>
+				<li><a href="#slice" class="collection-item">.slice</a></li>
 
 				<div class="collection-header"><h6>Iterator Methods</h6></div>
 				<li><a href="#each" class="collection-item">.each</a></li>
@@ -133,16 +140,15 @@
 				<li><a href="#none" class="collection-item">.none?</a></li>
 		  </ul>
 
-			<div id="main-article" class="col l7 push-l4 m8 push-m3 s10 push-s1">
-				<div class="content row">
+			<main id="main-article" class="col l7 push-l4 m8 push-m3 s10 push-s1">
+				<article class="content row">
 
 					<!-- Trigger - Mobile Table of Contents -->
 					<div class="fixed-action-btn">
 						<a href="#" data-target="mobile-toc" class="sidenav-trigger btn-floating btn-large waves-effect waves-light red hide-on-med-and-up"><i class="material-icons">toc</i></a>
 					</div>
 
-					<h4><b>Array Methods</b></h4>
-					<p>Ruby has over 50 methods in its <em>Enumerable Module</em>. <a href="https://ruby-doc.org/core-2.6.4/Enumerable.html">Official Ruby Docs</a></p>
+					<h4><b>How to Use Array Methods in Ruby</b></h4>
 
 					<h5 id="title-goals">Accessor and Subset Methods</h5>
 					<p>Accessor methods return a new value or representation of the array it's called on. They do not mutate/change the original array.</p>
@@ -273,22 +279,6 @@
 						numbers.<span class="method">reject</span>{ |num| num >= <span class="num">0</span> }  <span class="comment">#=> [-3, -99]</span>
 					</code>
 
-					<h5 id="slice">.slice</h5>
-					<p>The <span class="code">.slice</span> method takes an enumerable collection and two integer parameters to return a subset of the array. The first parameter specifies what index to start at and the second parements specifies the number of elements.</p>
-
-					<code><span class="comment"># slice 3 elements starting from index 0</span>
-						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
-						numbers.<span class="method">slice</span>(0, 3)  <span class="comment">#=> [5, 2, 0]</span>
-
-						<span class="comment"># slice 2 elements starting from index 3</span>
-						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
-						numbers.<span class="method">slice</span>(3, 2)  <span class="comment">#=> [-3, -99]</span>
-
-						<span class="comment"># slice 1 element starting from index 3</span>
-						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
-						numbers.<span class="method">slice</span>(3)  <span class="comment">#=> -3</span>
-					</code>
-
 					<h5 id="title-goals">Mutator Methods</h5>
 					<p>Mutator methods have the ability to mutate/change the array it's called on if you add the bang operator "<span class="code">!</span>"</p>
 
@@ -381,31 +371,37 @@
 					</code>
 
 					<h5 id="delete">.delete</h5>
-					<p>The <span class="code">.delete</span> method deletes/removes elements at a specified location in an array.</p>
+					<p>The <span class="code">.delete</span> method deletes/removes a specified value in an array.</p>
 
-					<code><span class="comment"># delete the 3rd element in an array</span>
+					<code><span class="comment"># delete all the "5"'s in an array</span>
 						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
-						numbers.<span class="method">delete</span>(<span class="num">3</span>) <span class="comment">#=> 4</span>
-						<span class="comment">numbers #=> [ 1, 2, 3, 5 ]</span>
-
-						<span class="comment"># delete multiple elements starting at position 3 in an array</span>
-							numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
-							numbers.<span class="method">delete</span>(<span class="num">3</span>) <span class="comment">#=> 4</span>
-							<span class="comment">numbers #=> [ 1, 2, 3, 5 ]</span>
+						numbers.<span class="method">delete</span>(<span class="num">5</span>) <span class="comment">#=> 5</span>
+						<span class="comment">numbers #=> [ 1, 2, 3, 4 ]</span>
 					</code>
 
 					<h5 id="delete_at">.delete_at</h5>
-					<p>The <span class="code">.delete_at</span> method deletes/removes elements at a specified location in an array.</p>
+					<p>The <span class="code">.delete_at</span> method deletes/removes elements at a specified index in an array.</p>
 
-					<code><span class="comment"># delete the 3rd element in an array</span>
+					<code><span class="comment"># delete the 3rd element (index: 2) in an array</span>
 						numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
-						numbers.<span class="method">delete_at</span>(<span class="num">3</span>) <span class="comment">#=> 4</span>
-						<span class="comment">numbers #=> [ 1, 2, 3, 5 ]</span>
+						numbers.<span class="method">delete_at</span>(<span class="num">2</span>) <span class="comment">#=> 3</span>
+						<span class="comment">numbers #=> [ 1, 2, 4, 5 ]</span>
+					</code>
 
-						<span class="comment"># delete multiple elements starting at position 3 in an array</span>
-							numbers = [ <span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">5</span> ]
-							numbers.<span class="method">delete_at</span>(<span class="num">3</span>) <span class="comment">#=> 4</span>
-							<span class="comment">numbers #=> [ 1, 2, 3, 5 ]</span>
+					<h5 id="slice">.slice</h5>
+					<p>The <span class="code">.slice</span> method takes an enumerable collection and two integer parameters to return a subset of the array. The first parameter specifies what index to start at and the second parements specifies the number of elements. It does not mutate the original array. Use <span class="code">.slice!</span> to mutate the original array.</p>
+
+					<code><span class="comment"># slice 3 elements starting from index 0</span>
+						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
+						numbers.<span class="method">slice</span>(0, 3)  <span class="comment">#=> [5, 2, 0]</span>
+
+						<span class="comment"># slice 2 elements starting from index 3</span>
+						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
+						numbers.<span class="method">slice</span>(3, 2)  <span class="comment">#=> [-3, -99]</span>
+
+						<span class="comment"># slice 1 element starting from index 3</span>
+						numbers = [ <span class="num">5</span>, <span class="num">2</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">-99</span> ]
+						numbers.<span class="method">slice</span>(3)  <span class="comment">#=> -3</span>
 					</code>
 
 					<h5 id="title-goals">Iterator Methods</h5>
@@ -500,17 +496,10 @@
 						numbers.<span class="method">none?</span>{ |num| num == <span class="num">15</span> }  <span class="comment">#=> true</span>
 					</code>
 
-
-					<!--
-					<p class="note">
-						Note: The goal was NOT to make a Sudoku Generator or a Sudoku Solver.
-					</p>
-					-->
-
 					<h5 id="title-play">Contribute to this open-source project</h5>
-					<a href="https://github.com/rtingchaleun/Rons-Ruby-Docs" target="_blank">https://github.com/rtingchaleun/Rons-Ruby-Docs</a>
-				</div>
-			</div>
+					<a href="https://github.com/rtingchaleun/Ruby-Genius" target="_blank">https://github.com/rtingchaleun/Ruby-Genius</a>
+				</article>
+			</main>
 			<!--
 			<div id="related-articles" class="col l3 push-l3 m8 push-m3 s10 push-s1">
 				<div class="collection with-header">
@@ -526,9 +515,9 @@
 
 
 	<!--JS-->
-	<script src="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/js/jquery3-3-1.js"></script>
+	<script src="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/js/jquery3-3-1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script type="text/javascript" src="/Users/LeoBold/Google%20Drive/School/Website_Projects/Rons-Ruby-Docs/js/main.js"></script>
+	<script type="text/javascript" src="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/js/main.js"></script>
 
 
 	<script>
