@@ -18,15 +18,16 @@
 </head>
 
 <body onload="scrollSpy()" onscroll="scrollSpy()">
-	<!-- Dropdown - Epics -->
+	<!-- Dropdown - Epics
 	<ul id="dd-epic" class="dropdown-content">
 	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/arrays.html">Using Arrays in Ruby</a></li>
 	</ul>
+	-->
 
 	<!-- Dropdown - Chapters -->
 	<ul id="dd-chapter" class="dropdown-content">
-	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/working-with-arrays.html">Working with Arrays</a></li>
-	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/array-methods.html">Array Methods</a></li>
+	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/working-with-arrays.html">Working with Arrays in Ruby</a></li>
+	  <li><a href="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/ruby/arrays/array-methods.html">How to Use Array Methods in Ruby</a></li>
 	</ul>
 
 	<nav class="nav-extended">
@@ -50,9 +51,11 @@
 		<!-- Secondary Nav Bar -->
 		<div id="secondary-navbar" class="nav-content white center">
 			<ul class="jump-bar">
+				<!--
         <li><a class="dropdown-trigger" href="#!" data-target="dd-epic">Ruby Arrays<i class="material-icons right">arrow_drop_down</i></a></li>
 				<li><i class="fas fa-chevron-right blue-grey-text darken-2"></i></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dd-chapter">Working with Arrays<i class="material-icons right">arrow_drop_down</i></a></li>
+				-->
+        <li><a class="dropdown-trigger" href="#!" data-target="dd-chapter">Working with Arrays in Ruby<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </nav>
@@ -86,20 +89,17 @@
 			<!-- Table of Contents - Mobile -->
 			<ul class="sidenav" id="mobile-toc">
 				<div class="collection-header"><h6>Creating an Array</h6></div>
-				<a href="#creating-square-brackets" class="collection-item">Square Brackets</a>
-				<a href="#creating-percent-notation" class="collection-item">Percent Notation</a>
-				<a href="#creating-array-new" class="collection-item">Array.new</a>
-				<a href="#creating-to-a" class="collection-item">.to_a</a>
-
+				<li><a href="#creating-square-brackets" class="collection-item">Square Brackets</a></li>
+				<li><a href="#creating-percent-notation" class="collection-item">Percent Notation</a></li>
+				<li><a href="#creating-array-new" class="collection-item">Array.new</a></li>
+				<li><a href="#creating-to-a" class="collection-item">.to_a</a></li>
 				<div class="collection-header"><h6>Accessing Items in an Array</h6></div>
-				<a href="#accessing-index" class="collection-item">Index</a>
-
-				<a class="collection-item">Modifying an Array</a>
-				<a href="#modifying-modify" class="collection-item">Modifying an Element</a>
-				<a href="#modifying-add" class="collection-item">Adding an Element</a>
-				<a href="#modifying-remove" class="collection-item">Removing an Element</a>
-
-				<a href="#iterating" class="collection-item">Iterating Over an Array</a>
+				<li><a href="#accessing-index" class="collection-item">Index</a></li>
+				<li><a class="collection-item">Modifying an Array</a></li>
+				<li><a href="#modifying-modify" class="collection-item">Modifying an Element</a></li>
+				<li><a href="#modifying-add" class="collection-item">Adding an Element</a></li>
+				<li><a href="#modifying-remove" class="collection-item">Removing an Element</a></li>
+				<li><a href="#iterating" class="collection-item">Iterating Over an Array</a></li>
 		  </ul>
 
 			<main id="main-article" class="col l7 push-l4 m8 push-m3 s10 push-s1">
@@ -110,10 +110,10 @@
 						<a href="#" data-target="mobile-toc" class="sidenav-trigger btn-floating btn-large waves-effect waves-light red hide-on-med-and-up"><i class="material-icons">toc</i></a>
 					</div>
 
-					<h4><b>Working with Arrays</b></h4>
-					<p>Official docs: <a href="https://ruby-doc.org/core-2.5.0/Array.html">Ruby Arrays</a></p>
+					<h2><b>Working with Arrays in Ruby</b></h2>
+					<img class="responsive-img" src="/Users/LeoBold/Google%20Drive/School/Website_Projects/Ruby-Genius/img/arrays for ruby.png" alt="Ruby Arrays">
 
-					<h5>Creating an Array</h5>
+					<h4>Creating an Array</h4>
 
 					<h5 id="creating-square-brackets">Using "Square Brackets" <span class="code">[]</span></h5>
 					<code><span class="comment"># create an array of integers called "numbers"</span>
